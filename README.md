@@ -10,3 +10,5 @@ Additionally, a **web service** will be created to **compare prices** from diffe
 
 ### **High-Level Architecture**
 ![Alt text](TPgRPC4.png)
+
+The implementation is divided into three main parts:
