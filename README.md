@@ -8,6 +8,23 @@ The first step is to replicate the implementation from **TP2** or **TP3**, but u
 
 Additionally, a **web service** will be created to **compare prices** from different agencies and display them on the **command-line interface (CLI)**. This will allow clients to choose the best offer before making a reservation.
 
+### Prerequisites
+
+Before setting up the project, make sure you have the following installed:
+
+- **Java 8 or higher**: This project uses Java to run.
+- **Apache Maven**: Used for managing the build and dependencies.
+- **gRPC**: The project relies on gRPC for remote procedure calls.
+- **Protobuf compiler (`protoc`)**: Used for generating Java code from `.proto` files.
+
+### Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/malik-mnsr/TP4_Archi_Dis_gRPC.git
+cd TP4_Archi_Dis_gRPC
+```
 ### **High-Level Architecture**
 ![Alt text](TPgRPC4.png)
 
