@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package reservation;
+
+import "google/protobuf/timestamp.proto";
+
+message CreateReservationRequest {
+  string name = 1;
+  google.protobuf.Timestamp start_date = 2;
+  google.protobuf.Timestamp end_date = 3;
+  int32 offer_id = 4;
+  int32 agency_id = 5;
+}
+
+message ReservationResponse {
+  int32 id = 1;
+  string name = 2;
+  google.protobuf.Timestamp start_date = 3;
+  google.protobuf.Timestamp end_date = 4;
+  int32 offer_id = 5;
+  int32 agency_id = 6;
+  google.protobuf.Timestamp reservation_date = 7;
+}
+
+message Empty {}
+
+service ReservationService {
+  rpc CreateReservation(CreateReservationRequest) returns (ReservationResponse) {}
+  rpc SaveReservation(ReservationResponse) returns (ReservationResponse) {}
+}

@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package availability;
+
+import "google/protobuf/timestamp.proto";
+
+/// Hotel Availability Request
+message CheckAvailabilityRequest {
+  int32 agence_id = 1;
+  string username = 2;
+  string password = 3;
+  google.protobuf.Timestamp start_date = 4;
+  google.protobuf.Timestamp end_date = 5;
+  string city = 6;
+  int32 min_stars = 7;
+  int32 number_of_persons = 8;
+
+}
+
+/// Hotel Availability Response
+message CheckAvailabilityResponse {
+  repeated OfferRpc offers = 1;
+}
+
+/// Empty Message
+message Empty {}
+
+/// All Offers Response
+message AllOffersResponse {
+  repeated OfferRpc offers = 1;
+}
+
+/// Offer RPC
+message OfferRpc {
+  int32 id = 1;
+  int32 agence_id = 2;
+  google.protobuf.Timestamp availability_start = 3;
+  google.protobuf.Timestamp availability_end = 4;
+  int32 number_of_beds = 5;
+  string hotel_city = 7;
+  int32 hotel_stars = 8;
+}
+
+/// Hotel Availability Service
+service HotelAvailabilityService {
+  rpc CheckAvailability(CheckAvailabilityRequest) returns (CheckAvailabilityResponse) {}
+  rpc GetAllOffers(Empty) returns (AllOffersResponse) {}
+}
