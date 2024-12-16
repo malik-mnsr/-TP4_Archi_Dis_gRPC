@@ -34,8 +34,17 @@ The implementation is divided into three main parts:
 ### A. Common Module
 
 The **Common Module** contains the `.proto` files that define the gRPC service and message types. Maven, using the `protobuf-maven-plugin`, will automatically generate Java files for both the gRPC service classes and message types.
+gRPC Service Classes
+Generated from `.proto` files:  
+- `HotelAvailabilityServiceGrpc.java`  
+- `HotelReservationServiceGrpc.java`  
+Located in: `target/`.
 
-These files are essential for implementing the server-side and client-side logic for your gRPC services.
+Protobuf Message Classes
+Generated message classes:  
+- `HotelAvailabilityRequest.java`  
+- `HotelReservationRequest.java`
+
 
 #### **B. Server Module**
 #### **C. Agency Module**
