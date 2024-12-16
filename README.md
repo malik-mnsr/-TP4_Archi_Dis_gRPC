@@ -8,6 +8,9 @@ The first step is to replicate the implementation from **TP2** or **TP3**, but u
 
 Additionally, a **web service** will be created to **compare prices** from different agencies and display them on the **command-line interface (CLI)**. This will allow clients to choose the best offer before making a reservation.
 
+### **High-Level Architecture**
+![Alt text](TPgRPC4.png)
+
 ### Prerequisites
 
 Before setting up the project, make sure you have the following installed:
@@ -25,8 +28,6 @@ First, clone the repository to your local machine:
 git clone https://github.com/malik-mnsr/TP4_Archi_Dis_gRPC.git
 cd TP4_Archi_Dis_gRPC
 ```
-### **High-Level Architecture**
-![Alt text](TPgRPC4.png)
 
 The implementation is divided into three main parts:
 
