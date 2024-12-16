@@ -48,3 +48,15 @@ Generated message classes:
 
 #### **B. Server Module**
 #### **C. Agency Module**
+
+### **Execution**
+
+To run the system:
+1. Generate `target/` using `mvn clean install` then ``.
+2. Start the **Hotel Module** using `mvn clean install` then `mvn spring-boot:run`.
+3. Start the **Agency Module** using `mvn clean install` then `mvn spring-boot:run`.
+4. Use the **CLI** or **Postman** to interact with the services.
+
+For any issues or bugs, ensure to check the **Postman responses** and the **logs** for errors.
+
+###### **MANSOUR Malik M1 GL Montpellier, 16/12/2024**
