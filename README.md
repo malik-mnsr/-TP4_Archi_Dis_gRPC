@@ -52,7 +52,7 @@ Generated message classes:
 ### **Execution**
 
 To run the system:
-1. Generate `target/` using `mvn clean install` then ``.
+1. Generate `target/` using `mvn clean install`.
 2. Start the **Hotel Module** using `mvn clean install` then `mvn spring-boot:run`.
 3. Start the **Agency Module** using `mvn clean install` then `mvn spring-boot:run`.
 4. Use the **CLI** or **Postman** to interact with the services.
